@@ -25,6 +25,14 @@ Queries Coingecko's API for the latest price of a coin. API Limit of 50 queries 
 TODO: 
 * Extend config to array for querying multiple coins
 * Change default interval
+
+### geth.d
+Monitor geth client metrics.
+
+TODO:
+* Cover more metrics
+* Add explanations of metrics to dashboard
+
 ### json_rpc.d
 Queries a RPC Endpoint for latest value.
 
@@ -32,7 +40,4 @@ TODO:
 * Extend to include ABI encoding to e.g. query ERC20 contract balances
 
 ## Other Ideas
-### geth.d
-Build an additional check to query and process geth node metrics (start with non-extensive metrics and filter important ones.)
-
 ### defillama.d
