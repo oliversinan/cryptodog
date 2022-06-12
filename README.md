@@ -1,12 +1,22 @@
 # Cryptodog
 This repository contains custom Agent checks for monitoring information relating to blockchain/web3/cryptographic assets.
 
-## Setup
+# Setup
+## Installing the checks
 Utilize the `setup.sh` cript to copy the check to the repective destinations - you need to set the rootpath of your Datadog agent directory.
 ```
 sudo ./setup.sh -d /etc/datadog-agent/
 # Restart the agent to apply changes
 sudo service datadog-agent restart
+```
+## Deploying Datadog Resources
+This repository comes with predefined Datadog resources to monitor the different checks. Rollout requires Terraform.
+```
+export TF_VAR_datadog_api_key="<Your-API-Key>"
+export TF_VAR_datadog_app_key="<Your-App-Key>"
+cd ./resources
+terraform init
+terraform apply
 ```
 
 ### coingecko.d
