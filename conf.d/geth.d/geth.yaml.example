@@ -1,0 +1,12 @@
+init_config:
+
+instances:
+  # Default Metrics Address & Port for geth local client  
+  - metricsaddress: http://127.0.0.1:6060/debug/metrics
+
+logs:
+  - type: file
+    # Example log path - make sure to log as json with geth client
+    path: "/home/logs/geth/log.json"
+    service: "geth"
+    source: "geth"
