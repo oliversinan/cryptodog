@@ -1,0 +1,6 @@
+init_config:
+
+instances:
+  # Example for polling Ethereum Prices in USD and EUR
+  - coin: ethereum
+    vs_currencies: usd,eur
