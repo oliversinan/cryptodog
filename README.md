@@ -27,7 +27,10 @@ TODO:
 * Change default interval
 
 ### geth.d
-Monitor geth client metrics.
+Monitor geth client metrics. Example line to start client with metric server, logs and rpc endpoint (for json_rpc when run locally).
+```
+geth --syncmode light --http --metrics --metrics.addr 127.0.0.1 --log.json 2> ~/logs/geth/log.json
+```
 
 TODO:
 * Cover more metrics
