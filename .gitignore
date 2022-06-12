@@ -1,3 +1,4 @@
 conf.d/*/*.yaml
 *.tfstate
 resources/.terraform*
+*.backup
